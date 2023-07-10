@@ -1,7 +1,6 @@
 
 local Player  = game.Players.LocalPlayer
 local MapFolder   = game.Workspace.CurrentMap
-local positionSave = Player.Character.HumanoidRootPart.Position
 while true do 
 for i, v in pairs(MapFolder:GetChildren()[1].Coins:GetChildren()) do
  Player.Character.HumanoidRootPart.CFrame = v.CFrame
