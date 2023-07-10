@@ -1,3 +1,8 @@
-sapsapcininsiki2
-samibabaproking
-25R8G6ROUAV
+
+local Player  = game.Players.LocalPlayer
+local MapFolder   = game.Workspace.CurrentMap
+local positionSave = Player.Character.HumanoidRootPart.Position
+for i, v in pairs(MapFolder:GetChildren()[1].Coins:GetChildren()) do
+ Player.Character.HumanoidRootPart.CFrame = v.CFrame
+ wait(0.1)
+end
